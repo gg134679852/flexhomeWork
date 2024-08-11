@@ -115,7 +115,7 @@ section {
 
 body {
   line-height: 1.5;
-  font-family: "Bruno Ace SC";
+  font-family: "Bruno Ace SC", "sans-serif";
   color: #d1d1d1;
 }
 
@@ -178,12 +178,16 @@ img {
 }
 
 .navBar__linkButton {
-  width: 44.7%;
+  flex: 1 1 43.7%;
   font-size: 16px;
   text-align-last: center;
-  color: #ffffff;
   border: 1px solid #ffffff;
   padding: 10px;
+}
+
+.navBar__linkButton a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .titlePoster {
@@ -221,7 +225,7 @@ img {
 .titlePoster__button p {
   white-space: nowrap;
   font-size: 20px;
-  background-color: #650300;
+  background-color: #AA0601;
   color: #ffffff;
   padding: 10px;
 }
@@ -276,7 +280,7 @@ img {
 }
 
 .productType__listItem {
-  width: 81%;
+  width: 95%;
 }
 
 .productType__listItem h3 {
@@ -425,7 +429,7 @@ img {
 }
 
 .formContent__listItem input {
-  border-color: #000000;
+  border: 1px solid #000000;
   height: 36px;
   background-color: #fbf2f2;
 }
@@ -534,6 +538,7 @@ img {
 
   .titlePoster__mainTitle {
     font-size: 64px;
+    white-space: nowrap;
   }
 
   .titlePoster__button {
@@ -548,6 +553,8 @@ img {
 
   .productType__list {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .productType__listItem {
